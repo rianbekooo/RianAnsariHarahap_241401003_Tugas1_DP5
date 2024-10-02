@@ -4,14 +4,15 @@ var
     n: integer;
 begin
     clrscr;
-    write('Masukkan angka: '); readln(n);
+    write('Masukkan bilangan bulat: '); 
+    readln(n);
     if (n mod 2 = 0) then
         begin
-        writeln(n,' merupakan bilangan genap');
+            writeln(n,' yaitu bilangan genap');
         end
     else
         begin
-        writeln(n,' merupakan bilangan ganjil');
+            writeln(n,' yaitu bilangan ganjil');
         end;
     readln;
 end.
