@@ -1,17 +1,18 @@
-program kelulusan;
+program lulusgalulus;
 uses crt;
 var 
     n: real;
 begin
     clrscr;
-    write('Masukkan nilai kamu: '); readln(n);
+    write('Masukkan nilai kamu: '); 
+    readln(n);
     if n>=70 then
-    begin
-        write('Kamu lulus!');
-    end
+        begin
+            write('Horeeee kamu lulus!');
+        end
     else
-    begin
-        write('Kamu tidak lulus!');
-    end;
+        begin
+            write('Mampus kau gak lulus!');
+        end;
     readln;
 end.
