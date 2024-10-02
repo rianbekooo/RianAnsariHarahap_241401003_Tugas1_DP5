@@ -1,46 +1,48 @@
-program vendingmachine;
+program rokok;
 uses crt;
 var
     nomor, harga, uang: integer;
 begin
     clrscr;
-        writeln('1. Coca-Cola        = 5000');
-        writeln('2. Pepsi            = 4500');
-        writeln('3. Sprite           = 4000');
-        writeln('4. Fanta            = 4500');
-        writeln('5. Air Mineral      = 3000');
-        writeln('6. Red Bull         = 9000');
-        writeln('7. Botol Sosro      = 3500');
-        writeln('8. Monster Energy   = 48000');
-        writeln('9. Pocari Sweat     = 5500');
-        writeln('10. Nestle          = 12000');
-        write('Pilih minuman (1-10): '); readln(nomor);
+        writeln('1. Surya            = 33000');
+        writeln('2. Sampoerna        = 35000');
+        writeln('3. Djisamsoe        = 21000');
+        writeln('4. Classmild        = 26000');
+        writeln('5. Downhill         = 29000');
+        writeln('6. Magnum           = 31000');
+        writeln('7. Marcopolo        = 27000');
+        writeln('8. Marlboro         = 41000');
+        writeln('9. Luffman          = 10000');
+        writeln('10. Esse            = 43000');
+        write('Pilih Rokok (1-10): '); 
+        readln(nomor);
     case nomor of
-        1: harga := 5000;  
-        2: harga := 4500;
-        3: harga := 4000;
-        4: harga := 4500;
-        5: harga := 3000;
-        6: harga := 9000;
-        7: harga := 3500;
-        8: harga := 48000;
-        9: harga := 5500;
-        10: harga := 12000;
+        1: harga := 33000;  
+        2: harga := 3500;
+        3: harga := 21000;
+        4: harga := 26000;
+        5: harga := 29000;
+        6: harga := 31000;
+        7: harga := 27000;
+        8: harga := 41000;
+        9: harga := 10000;
+        10: harga := 43000;
     else
-    begin
-        writeln('Pilihan tidak terdaftar!');
-    exit;
+        begin
+            writeln('rokokmu gak ada lee!');
+        exit;
+        end;
     end;
-    end;
-        write('Masukkan uang kamu: '); readln(uang);
+        write('Masukkan uang kamu: ');
+        readln(uang);
     if (uang >= harga) then
-    begin
-        writeln('Kamu membeli minuman dengan harga ', harga);
-        writeln('Kembalian uangmu: ', uang - harga);
-    end
+        begin
+            writeln('Kamu membeli rokok dengan harga ', harga);
+            writeln('Kembalian uangmu: ', uang - harga);
+        end
     else
-    begin
-        writeln('Uangmu tidak cukup.');
-    end;
+        begin
+            writeln('Uangmu gak cukup lee.');
+        end;
     readln;
 end.
